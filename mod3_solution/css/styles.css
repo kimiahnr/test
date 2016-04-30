@@ -18,9 +18,10 @@ body
   margin-top: 10px;
 }
 #nav-list a {
-  color: #951C49;
+	background: #f0efef;
+  color: #557c3e;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.1em;
 }
 #nav-list a:hover {
   background: #E7E7E7;
@@ -32,4 +33,27 @@ body
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -40px;
+}
+
+#main-content #home-tiles p
+{
+	padding: 30px;
+}
+ h3
+{
+	padding: 20px;
+}
+#main-content #home-tiles div
+{
+	margin-bottom: 30px;
+	margin-top: 30px;
+	
+}
+#Chicken, #Beef,#Sushi
+{
+	margin: auto;
+	width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+	background: #679f49;
 }
