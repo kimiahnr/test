@@ -88,16 +88,17 @@ $ajaxUtils.sendGetRequest(
 });
 // *** finish **
 
-function chooseRandomCategory (categories) {
+
+// Bufunction chooseRandomCategory (categories) {
+  // Choose a random index into the array (from 0 inclusively until array length (exclusively))
+ function chooseRandomCategory (categories) {
   // Choose a random index into the array (from 0 inclusively until array length (exclusively))
   var randomArrayIndex = Math.floor(Math.random() * categories.length);
 
   // return category object with that randomArrayIndex
   return categories[randomArrayIndex];
 }
-// Bufunction chooseRandomCategory (categories) {
-  // Choose a random index into the array (from 0 inclusively until array length (exclusively))
- 
+
 function buildAndShowHomeHTML (categories) {
   
   // Load home snippet page
@@ -112,8 +113,7 @@ function buildAndShowHomeHTML (categories) {
        
        homeHtml=insertProperty(homeHtml,"randomCategoryShortName",chooseRandomCategory);
 
-       document.querySelector("#main-content")
-      .innerHTML = responseText;
+       dinsertHtml("#main-content", homeHtml);
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
